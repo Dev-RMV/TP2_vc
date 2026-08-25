@@ -1,0 +1,7 @@
+# ambiente
+venv/
+__pycache__/
+.idea/
+
+# dataset LFW baixado pelo scikit-learn (~230 MB; regenerado por prepara_dados.py)
+data/skl/

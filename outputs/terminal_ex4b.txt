@@ -1,0 +1,11 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787616193.991056    9020 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787616194.903733    9020 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+=== ex4b: features CNN + PCA ===
+features extraidas: (20, 128)  (20 imagens x 128-d)
+variancia explicada pelos 2 PCs: 59.6%
+scatter salvo em outputs/ex4b_pca_scatter.png
+ORB nas mesmas imagens: keypoints por imagem = [13, 0, 15, 0, 6, 17, 46, 13, 40, 48, 46, 46, 40, 31, 30, 45, 0, 21, 14, 12]
+  media 24.1 kp/imagem; 3 imagens sem nenhum kp

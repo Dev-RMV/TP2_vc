@@ -1,0 +1,15 @@
+=== ex2a: deteccao facial Haar Cascade ===
+
+config A_sensivel  {'scaleFactor': 1.05, 'minNeighbors': 3, 'minSize': (60, 60)}
+  frames: 144 | taxa de deteccao estimada: 100.0% (frames com >=1 rosto)
+  falsos positivos visiveis: 31 (deteccoes excedentes; video tem exatamente 1 rosto/frame)
+  latencia media detectMultiScale: 7.9 ms/frame
+  ROIs 48x48 salvas: 175
+
+config B_especifica  {'scaleFactor': 1.3, 'minNeighbors': 6, 'minSize': (60, 60)}
+  frames: 144 | taxa de deteccao estimada: 96.5% (frames com >=1 rosto)
+  falsos positivos visiveis: 0 (deteccoes excedentes; video tem exatamente 1 rosto/frame)
+  latencia media detectMultiScale: 1.8 ms/frame
+  ROIs 48x48 salvas: 139
+
+evidencias: outputs/ex2a_feed_*.png e outputs/faces_48/

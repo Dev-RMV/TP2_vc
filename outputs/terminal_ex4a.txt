@@ -1,0 +1,54 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787616151.426039   24344 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787616152.355663   24344 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+=== ex4a: CNN Fashion-MNIST (backend: tensorflow ) ===
+Model: "cnn_fmnist"
+┌─────────────────────────────────┬────────────────────────┬───────────────┐
+│ Layer (type)                    │ Output Shape           │       Param # │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 28, 28, 32)     │           320 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d (MaxPooling2D)    │ (None, 14, 14, 32)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_1 (Conv2D)               │ (None, 14, 14, 64)     │        18,496 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_1 (MaxPooling2D)  │ (None, 7, 7, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ flatten (Flatten)               │ (None, 3136)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ features (Dense)                │ (None, 128)            │       401,536 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout (Dropout)               │ (None, 128)            │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 10)             │         1,290 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 421,642 (1.61 MB)
+ Trainable params: 421,642 (1.61 MB)
+ Non-trainable params: 0 (0.00 B)
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Epoch 1/10
+422/422 - 3s - 7ms/step - accuracy: 0.8007 - loss: 0.5546 - val_accuracy: 0.8777 - val_loss: 0.3354
+Epoch 2/10
+422/422 - 2s - 6ms/step - accuracy: 0.8783 - loss: 0.3413 - val_accuracy: 0.8915 - val_loss: 0.2900
+Epoch 3/10
+422/422 - 2s - 6ms/step - accuracy: 0.8954 - loss: 0.2915 - val_accuracy: 0.9050 - val_loss: 0.2658
+Epoch 4/10
+422/422 - 2s - 6ms/step - accuracy: 0.9055 - loss: 0.2641 - val_accuracy: 0.9087 - val_loss: 0.2507
+Epoch 5/10
+422/422 - 2s - 6ms/step - accuracy: 0.9138 - loss: 0.2380 - val_accuracy: 0.9148 - val_loss: 0.2326
+Epoch 6/10
+422/422 - 2s - 6ms/step - accuracy: 0.9177 - loss: 0.2239 - val_accuracy: 0.9155 - val_loss: 0.2277
+Epoch 7/10
+422/422 - 2s - 6ms/step - accuracy: 0.9251 - loss: 0.2069 - val_accuracy: 0.9188 - val_loss: 0.2247
+Epoch 8/10
+422/422 - 2s - 6ms/step - accuracy: 0.9299 - loss: 0.1909 - val_accuracy: 0.9202 - val_loss: 0.2185
+Epoch 9/10
+422/422 - 2s - 6ms/step - accuracy: 0.9339 - loss: 0.1788 - val_accuracy: 0.9183 - val_loss: 0.2211
+Epoch 10/10
+422/422 - 2s - 6ms/step - accuracy: 0.9367 - loss: 0.1678 - val_accuracy: 0.9205 - val_loss: 0.2168
+
+acuracia no conjunto de TESTE: 0.9181  (loss 0.2439)
+grafico salvo em outputs/ex4a_curvas.png
+gap final treino-validacao: acc=+0.0162  loss=+0.0490
+modelo salvo em outputs/modelo_fmnist.keras

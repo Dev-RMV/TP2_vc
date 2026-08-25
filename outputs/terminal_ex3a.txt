@@ -1,0 +1,9 @@
+=== ex3a: comparacao de descritores ===
+
+metodo   kp_ref kp_transf  tempo_ms  dim  bytes/pt     tipo
+SIFT       1105      1187      22.8  128       512  float32
+ORB        2000      2000      49.7   32        32    uint8
+AKAZE       870       738      15.1   61        61    uint8
+
+evidencias: outputs/ex3a_keypoints_*.png
+pressione tecla em uma janela para sair

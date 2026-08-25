@@ -1,0 +1,15 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787616091.964062   32148 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787616092.929902   32148 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\TP2_vc\venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+=== ex2b: reconhecimento facial (DeepFace/Facenet) ===
+[cadastro] Colin_Powell: 3 fotos
+[cadastro] George_W_Bush: 3 fotos
+[cadastro] Tony_Blair: 3 fotos
+
+frames processados: 144
+tempo MEDIO de inferencia por frame: 128.6 ms (mediana 127.2 ms, ~7.8 fps)
+rotulos atribuidos: {'Colin_Powell': 41, 'desconhecido': 52, 'George_W_Bush': 30, 'Tony_Blair': 33}
+evidencias: outputs/ex2b_saida.mp4 e outputs/ex2b_frame_*.png

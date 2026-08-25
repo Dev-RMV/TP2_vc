@@ -1,0 +1,6 @@
+=== ex1a: disparidade e profundidade relativa ===
+disparidade valida: min=0.6px  max=159.0px
+pixel MAIS PROXIMO : (x=669, y=610)  disp=159.0px  norm=1.000
+pixel MAIS DISTANTE: (x=1082, y=530)  disp=0.6px  norm=0.000
+evidencias salvas em outputs/ex1a_*.png
+pressione qualquer tecla na janela para sair

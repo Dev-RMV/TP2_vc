@@ -1,0 +1,11 @@
+=== ex3b: matching + homografia ===
+keypoints: ref=1105  transf=1187
+BFMatcher (cross-check): 558 matches
+FLANN + razao de Lowe (0.75): 448 matches bons de 1105 candidatos
+RANSAC: 425 inliers de 448 matches (94.9%)
+homografia estimada:
+ [[  0.614    0.4296 -11.3276]
+ [ -0.4302   0.6137 209.0988]
+ [ -0.      -0.       1.    ]]
+evidencias: outputs/ex3b_matches.png, ex3b_alinhada.png, ex3b_sobreposicao.png
+pressione tecla em uma janela para sair
